@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soliloquy</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<script src="static/js/lib/require.min.js"></script>
+</head>
+<body>
+<div id="container"></div>
+
+<script>
+requirejs.config({
+    "baseUrl": "static/js/lib",
+    "paths": {
+        "app": "../src",
+		"jquery": "jquery-1.11.2.min"
+    },
+    "shim": {}
+});
+</script>
+
+<script>require(['app/main']);</script>
+
+</body>
+</html>
